@@ -1,3 +1,5 @@
+run `npm run test` to test
+
 # OdinProject-Calculator
 TheOdinProject Calculator challenge
 
