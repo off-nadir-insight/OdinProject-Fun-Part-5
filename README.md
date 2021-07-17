@@ -1,11 +1,18 @@
 run `npm run test` to test
 
-# OdinProject-Calculator
-TheOdinProject Calculator challenge
+# OdinProject
+TheOdinProject Fundamentals Part 5 challenge
 
 [Fundamentals - Part 5](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-5)
 
-## Exercise 08 - Calculator
+## Includes the following exercises:
+* calculator
+* palindromes
+* fibonacci
+* getTheTitles
+* findTheOldest
+
+### Exercise 08 - Calculator
 
 The goal for this exercise is to create a calculator that does the following:
 
