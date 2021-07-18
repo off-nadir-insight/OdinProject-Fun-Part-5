@@ -1,4 +1,4 @@
-// calculator tests
+/* --- calculator tests --- */
 // const calculator = require('./calculator');
 
 // describe('add', () => {
@@ -77,26 +77,60 @@
 // 	});
 // });
 
-// palindrome tests
+/* --- palindrome tests --- */
 const palindromes = require('./palindromes')
 
-describe('palindromes', () => {
-  test('works with single words', () => {
-    expect(palindromes('racecar')).toBe(true);
+// describe('palindromes', () => {
+//   test('works with single words', () => {
+//     expect(palindromes('racecar')).toBe(true);
+//   });
+//   test('works with punctuation ', () => {
+//     expect(palindromes('racecar!')).toBe(true);
+//   });
+//   test('works with upper-case letters ', () => {
+//     expect(palindromes('Racecar!')).toBe(true);
+//   });
+//   test('works with multiple words', () => {
+//     expect(palindromes('A car, a man, a maraca.')).toBe(true);
+//   });
+//   test('works with multiple words', () => {
+//     expect(palindromes('Animal loots foliated detail of stool lamina.')).toBe(true);
+//   });
+//   test('doesn\'t just always return true', () => {
+//     expect(palindromes('ZZZZ car, a man, a maraca.')).toBe(false);
+//   });
+// });
+
+/* --- fibonacci tests --- */ 
+
+const fibonacci = require('./fibonacci')
+
+describe('fibonacci', () => {
+  test('4th fibonacci number is 3', () => {
+    expect(fibonacci(4)).toBe(3);
   });
-  test('works with punctuation ', () => {
-    expect(palindromes('racecar!')).toBe(true);
+  test.skip('6th fibonacci number is 8', () => {
+    expect(fibonacci(6)).toBe(8);
   });
-  test('works with upper-case letters ', () => {
-    expect(palindromes('Racecar!')).toBe(true);
+  test.skip('10th fibonacci number is 55', () => {
+    expect(fibonacci(10)).toBe(55);
   });
-  test('works with multiple words', () => {
-    expect(palindromes('A car, a man, a maraca.')).toBe(true);
+  test.skip('15th fibonacci number is 610', () => {
+    expect(fibonacci(15)).toBe(610);
   });
-  test('works with multiple words', () => {
-    expect(palindromes('Animal loots foliated detail of stool lamina.')).toBe(true);
+  test.skip('25th fibonacci number is 75025', () => {
+    expect(fibonacci(25)).toBe(75025);
   });
-  test('doesn\'t just always return true', () => {
-    expect(palindromes('ZZZZ car, a man, a maraca.')).toBe(false);
+  test.skip('doesn\'t accept negatives', () => {
+    expect(fibonacci(-25)).toBe("OOPS");
+  });
+  test.skip('DOES accept strings', () => {
+    expect(fibonacci("1")).toBe(1);
+  });
+  test.skip('DOES accept strings', () => {
+    expect(fibonacci("2")).toBe(1);
+  });
+  test.skip('DOES accept strings', () => {
+    expect(fibonacci("8")).toBe(21);
   });
 });
