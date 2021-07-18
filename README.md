@@ -48,3 +48,39 @@ Create a function that returns a specific member of the Fibonacci sequence:
 fibonacci(4) // returns the 4th member of the series: 3  (1, 1, 2, 3)
 fibonacci(6) // returns 8
 ```
+
+### Exercise 11 - Get the Titles!
+
+You are given an array of objects that represent books with an author and a title that looks like this:
+
+```javascript
+const books = [
+  {
+    title: 'Book',
+    author: 'Name'
+  },
+  {
+    title: 'Book2',
+    author: 'Name2'
+  }
+]
+```
+
+Your job is to write a function that takes the array and returns an array of titles:
+
+```javascript
+getTheTitles(books) // ['Book','Book2']
+```
+
+#### Hints
+
+- You should use a built-in javascript method to do most of the work for you!
+
+### Exercise 12 - Find the Oldest
+
+Given an array of objects representing people with a birth and death year, return the oldest person.
+
+#### Hints
+- You should return the whole person object, but the tests mostly just check to make sure the name is correct.
+- this can be done with a couple of chained array methods, or by using `reduce`.
+- One of the tests checks for people with no death-date.. use JavaScript's Date function to get their age as of today.
